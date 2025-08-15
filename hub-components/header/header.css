@@ -1,0 +1,384 @@
+/**************** HEADER ******************/
+
+/*
+COLOUR NOTES
+  --header-bgcolor: #003366
+  --header-accent: #fca819;
+  --header-font: #fff;
+  --logo-right-border: #d6d6d6;
+  --nav-divider-color: #4b5e73;
+  --hover-underline-color: #fff;
+*/
+
+.navbar {
+  padding: 0 10%;
+}
+
+.header-style {
+  display: flex;
+  background-color: #003366;
+  /*background-color: transparent;*/
+  color: #fff;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 60px;
+  box-shadow: 0 3px #fca819;
+}
+
+.header-style .navbar-header {
+  display: flex;
+  margin-right:0;
+}
+
+.header-style .header-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header-style .header-content h2 {
+  margin: 5px 5px 0 18px;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.header-style .header-content a {
+  text-decoration: none;
+  color: #ffffff !important;
+}
+
+.header-style .header-content a:hover {
+  text-decoration: none;
+}
+
+.header-style .header-content .BClogo {
+  content: url("https://github.com/bcgov/design-system/blob/master/components/assets/images/logo-banner.png?raw=true");
+  margin-bottom: 0;
+  width: 100%;
+  border-right: 1px solid #d6d6d6;
+  padding-right: 10px;
+}
+
+.header-style .header-content .LidarBCLogo-link {
+  margin-left: 10px;
+  font-size:18px;
+  font-weight:bold;
+}
+
+.header-style .header-content .LidarBCLogo {
+  margin-top: 2px;
+  width: 125px;
+}
+
+.header-style .menu-content {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-left: 20px;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+
+
+.navbar-nav > li {
+  margin-right: 10px;
+  color: #ffffff;
+  padding: 0 0.5rem;
+}
+
+.navbar-nav > li:not(:first-of-type) {
+  border-left:1px solid #4b5e73;
+}
+
+.navbar-nav .nav-item {
+  margin: auto 0;
+  color: #ffffff;
+}
+
+.navbar-nav .nav-item a {
+  background: #003366;
+  /*background: transparent;*/
+  color: #ffffff;
+}
+
+.navbar-nav .nav-link:hover {
+  background:#003366;
+  /*background: transparent !important;*/
+  border-bottom: 2px solid #ffffff;
+  margin-bottom: -2px;
+}
+
+.navbar-nav .nav-link:focus {
+  background: #003366 !important;
+  /*background: transparent !important;*/
+  border-bottom: 2px solid #ffffff;
+  margin-bottom: -2px;
+}
+
+.navbar-nav .nav-item .nav-link{
+  color: #ffffff;
+  margin-top: 0px;
+}
+
+.button-content {
+  display: none;
+}
+
+.navbar-toggle-button {
+  background-color: transparent;
+  outline: 0;
+  box-shadow:none;
+  padding: 0 15px;
+  border: 1px solid #fff;
+  transition: 0.5s;
+}
+
+.hamburger-container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.hamburger-container .bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 8px 0;
+}
+
+.nav-style {
+  display: flex;
+  background-color: #ffffff;
+  border: 1px solid #38598A;
+  position: relative;
+  margin-left: auto;
+  padding: 0;
+}
+
+.dropdown-menu {
+  margin-top: 2px;
+  padding-right: 10px;
+  /*width: 100%;*/
+  padding: 0;
+  /*background-color: #003366;*/
+  border: 1px solid #000;
+  border: 1px solid rgba(0,0,0,.15);
+  border-top: none;
+  color: #ffffff;
+}
+
+.dropdown-menu:active{
+  background-color: transparent;
+}
+
+.nav-item:active {
+  background-color: transparent;
+}
+
+.dropdown-menu li{
+  margin: 0;
+  color: #ffffff;
+}
+
+.dropdown-menu li a{
+  color: #ffffff !important;
+}
+
+.dropdown-menu .nav-sublink:focus, .dropdown-menu .nav-sublink:hover {
+  color: #ffffff;
+  background-color: #FCBA19;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: inline-block;
+  color: #ffffff;
+  }
+
+/* max-width: 1420px */
+@media only screen and (max-width: 1280px){
+    .nav-style{
+      top: 0;
+    }
+    
+    .navbar-collapse {
+      padding-right: 0;
+      padding-left: 0;
+    }
+    
+    .navbar-collapse.in {
+      overflow-y: unset;
+    }
+    
+    .navbar-secondary {
+      display: none;
+    }
+  }
+
+/* MODAL START */
+
+.modal.right .modal-dialog {
+  position: fixed;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translate3d(0%, 0, 0);
+        -ms-transform: translate3d(0%, 0, 0);
+          -o-transform: translate3d(0%, 0, 0);
+            transform: translate3d(0%, 0, 0);
+}
+
+.modal.right .modal-content {
+    height: 100%;
+    width: 100%;
+}
+
+.modal.right .modal-body {
+  height: 100%;
+  background-color: #005c97;
+  background-color: rgba(0,92,151,1);
+  padding: 15px 15px 80px;
+}
+      
+/*Right*/
+.modal.right.fade .modal-dialog {
+    right: -320px;
+    -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+          -o-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+}
+
+.modal.right.fade.in .modal-dialog {
+    right: 0;
+}
+
+/* ----- MODAL STYLE ----- */
+.modal-content {
+    border-radius: 0;
+    border: none;
+    background-color: unset;
+}
+
+.modal-header {
+    border-bottom-color: #EEEEEE;
+    background-color: #FAFAFA;
+    padding: 0;
+}
+
+  .modal-link {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: auto;
+    height: 250px;
+    width: 100%;
+  }
+  
+
+  .modal-link a {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+    
+    font-style: normal;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+  } 
+  
+  .modal-link .level-02-link {
+    display: flex;
+    flex-direction: row;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  } 
+  
+  
+  
+  .overview {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    background-color: #005c97;
+    background-color: rgba(0,92,151,0.99);
+  }
+  
+  .nav-link-container {
+    height: 90%;
+    width: 75%;
+    margin: auto;
+  }
+  
+  .button-content-mobile {
+    display: flex;
+    margin-left: auto;
+  }
+  
+  .button-content-mobile .close span{
+    width: 35px;
+    padding: 15px;
+    font-size: 50px;
+    color: #ffffff;
+  }
+  
+@media only screen and (max-width: 1280px){
+  .navbar{
+    padding: 0 12px 0 25px;
+  }
+
+  .header-style .header-content .BClogo {
+    content: url("https://raw.githubusercontent.com/bcgov/design-system/master/components/assets/images/logo.svg");
+    width: 50px;
+  }
+
+  .button-content {
+    display: flex;
+    margin-left: auto;
+  }
+  
+  .menu-content {
+    display: none !important;
+  }
+  
+  .navbar-nav {
+    display: none !important;
+  }
+  
+  .header-style .header-content .bcgov-logo {
+    display: none !important;
+  }
+}
+  
+@media only screen and (max-width: 992px){
+  .nav-link-container {
+    /*height: 98%;*/
+    height: calc(100vh - 88px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 50px 10px 50px 10px;
+  }
+  
+  .modal-link {
+    height: 100%;
+    margin-bottom: 20px;
+  }
+
+  .beta-banner p {
+    text-align: center;
+  }
+}
