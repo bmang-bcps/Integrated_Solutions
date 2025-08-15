@@ -4,6 +4,6 @@
 
 ![1_iFrame image](img/1_iframebutton.png)
 
-![2_text image](img/2_textbutton.png)
+![2_text image](img/3_textbutton.png)
 
 3. 
