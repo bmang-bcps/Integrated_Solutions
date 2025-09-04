@@ -1,1 +1,93 @@
+/* styling for land acknowledgement banner */
+.land-acknowledgement {
+  background-color: rgb(41, 41, 41);
+  color: rgb(250, 249, 248);
+  font-size: 14px;
+  line-height: 21px;
+  border-top: 4px solid rgb(252, 186, 25);
+  border-bottom: 4px solid rgb(252, 186, 25);
+  margin: auto;
+  padding: 32px 16px;
+}
 
+.land-acknowledgement-container {
+  max-width: 1120px;
+  margin: auto;
+  padding: 32px;
+}
+/* styling for footer */
+.footer-wrapper {
+  max-width: 1120px;
+  margin: auto;
+  padding: 32px 16px;
+  line-height: 21px;
+}
+
+.outer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact {
+  flex: 0 0 50%;
+}
+
+.logo {
+  height: 56px;
+}
+
+.contact img {
+  max-width: 100%;
+}
+
+.contact p {
+  margin: 16px 0 0;
+}
+
+.more-info {
+  flex: 0 0 auto;
+}
+
+.more-info h2 {
+    text-transform: uppercase;
+    font-size: 14px;    
+    line-height: 24px;
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+.outer-container .more-info ul {
+    columns: 2;
+    margin: 0px 0px 16px;
+    list-style-type: none;
+    padding: 0px;
+}
+
+.more-info ul li {
+  text-decoration: underline;
+  margin-bottom: 16px;
+}
+
+a.footer-link {
+  color: rgb(70, 67, 65);
+  text-decoration: underline;
+}
+
+a.footer-link:hover {
+  color: rgb(96, 94, 92);
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgb(1, 51, 102);
+    padding: 32px 0;
+    margin: 32px 0;
+    flex-wrap: wrap;
+}
+/* styling for footer on small screens */
+@media (max-width: 575px) {
+  .outer-container {
+    flex-direction: column;
+  }
+}
